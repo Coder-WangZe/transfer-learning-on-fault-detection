@@ -1,2 +1,2 @@
 # transfer-learning-on-fault-detection
-transfer learning from simulated data to measured data,from multy to single
+transfer learning from lots of various measured data to single measured data
