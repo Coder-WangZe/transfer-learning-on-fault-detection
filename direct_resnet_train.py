@@ -176,12 +176,12 @@ def train(num_epochs):
     net = Network(0.0001, 64, classes_num=10)
     # get the train data
     # directly train
-    train_data_path = "./casy_train_data_10class.tfrecords"
-    test_data_path = "./casy_test_data_10class.tfrecords"
-    # train_data_path = "./tongji_train_data_rpm1000.tfrecords"
-    # test_data_path = "./tongji_test_data_rpm1000.tfrecords"
-    # train_data_path = "./tongji_data_4_class_diff_rpm_train.tfrecords"
-    # test_data_path = "./tongji_data_4_class_diff_rpm_test.tfrecords"
+    train_data_path = "./data_tfrecords/casy_train_data_10class.tfrecords"
+    test_data_path = "./data_tfrecords/casy_test_data_10class.tfrecords"
+    # train_data_path = "./data_tfrecords/tongji_data_4_class_diff_rpm_train.tfrecords"
+    # test_data_path = "./data_tfrecords/tongji_data_4_class_diff_rpm_test.tfrecords"
+    # train_data_path = "./data_tfrecords/tongji_train_data_rpm1000.tfrecords"
+    # test_data_path = "./data_tfrecords/tongji_test_data_rpm1000.tfrecords"
 
     train_image, train_label = read_and_decode(train_data_path)
     train_batch_image, train_batch_label = get_batch(train_image, train_label, batch_size=net.batch_size)
